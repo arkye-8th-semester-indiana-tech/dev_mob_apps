@@ -1,5 +1,5 @@
 // import Cocoa
 
-var numberOfStoplights: Int = 4
+let numberOfStoplights: Int = 4
 numberOfStoplights += 2
-// All fine!
+// Gives an error
