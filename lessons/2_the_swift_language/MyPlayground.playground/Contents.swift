@@ -2,13 +2,11 @@
 
 import Cocoa
 
-var str = "Hello, playground"
-str = "Hello, Swift"
-let constStr = str
+let emptyString = String()
+let emptyArrayOfInts = [Int]()
+let emptySetOfFloats = Set<Float>()
+
+let defaultNumber = Int()
+let defaultBool = Bool()
 
 let number = 42
-let fmStation = 91.1
-
-let countingUp = ["one", "two"]
-let secondElement = countingUp[1]
-let nameByParkingSpace =  [13: "Alice", 27: "Bob"]
