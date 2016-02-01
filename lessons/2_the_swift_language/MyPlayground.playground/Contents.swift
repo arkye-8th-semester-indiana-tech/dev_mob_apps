@@ -10,4 +10,5 @@ var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
 var arrayOfInts: [Int]
-var dictionaryOfCapitalsByCountry: Dictionary<String, String>
+var dictionaryOfCapitalsByCountry: [String:String]
+var winningLotteryNumbers: Set<Int>
