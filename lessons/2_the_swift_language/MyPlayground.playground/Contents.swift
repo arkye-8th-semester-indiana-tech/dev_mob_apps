@@ -9,4 +9,5 @@ let constStr = str
 var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
-var arrayOfInts: Array<Int>
+var arrayOfInts: [Int]
+var dictionaryOfCapitalsByCountry: Dictionary<String, String>
