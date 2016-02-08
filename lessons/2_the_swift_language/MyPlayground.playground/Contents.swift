@@ -12,6 +12,6 @@ var reading3: Float?
 
 reading1 = 9.8
 reading2 = 9.2
-reading3 = 9.7
-let avgReading = (reading1 + reading2 + reading3)/3
+// reading3 = 9.7
+let avgReading = (reading1! + reading2! + reading3!)/3
 
