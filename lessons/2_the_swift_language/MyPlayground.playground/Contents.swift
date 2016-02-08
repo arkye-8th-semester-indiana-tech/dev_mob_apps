@@ -2,32 +2,15 @@
 
 import Cocoa
 
-enum PieType {
-    case Apple
+enum PieType: Int {
+    case Apple = 0
     case Cherry
     case Pecan
 }
 
-let favoritePie = PieType.Apple
+let pieRawValue = PieType.Pecan.rawValue
+// pieRawValue is an Int with a value of 2
 
-let name: String
-switch favoritePie {
-case .Apple:
-    name = "Apple"
-case .Cherry:
-    name = "Cherry"
-case .Pecan:
-    name = "Pecan"
-}
-
-let osxVersion: Int = 12
-switch osxVersion {
-case 0...8:
-    print("A big cat")
-case 9:
-    print("Mavericks")
-case 10:
-    print("Yosemite")
-default:
-    print("Greetings, people of the future! What's new in 10.\(osxVersion)?")
+if let pieType = PieType(rawValue: pieRawValue) {
+    // Got a valid 'pieType'!
 }
