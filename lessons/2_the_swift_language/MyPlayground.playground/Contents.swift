@@ -2,8 +2,16 @@
 
 import Cocoa
 
-var countingUp = ["one", "two"]
-let secondElement = countingUp[1]
-countingUp.count
+var anOptionalFloat: Float?
+var anOptionalArrayOfStrings: [String]?
+var anOptionalArrayOfOptionalStrings: [String?]?
 
-countingUp.append("three")
+var reading1: Float?
+var reading2: Float?
+var reading3: Float?
+
+reading1 = 9.8
+reading2 = 9.2
+reading3 = 9.7
+let avgReading = (reading1 + reading2 + reading3)/3
+
