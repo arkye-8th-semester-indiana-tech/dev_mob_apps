@@ -2,30 +2,32 @@
 
 import Cocoa
 
-var countingUp = ["one", "two"]
-countingUp.append("three")
-
-for var i = 0; i < countingUp.count; i++ {
-    let string = countingUp[i]
-    // Use 'string'
+enum PieType {
+    case Apple
+    case Cherry
+    case Pecan
 }
 
-let range = 0..<countingUp.count
-for i in range {
-    let string = countingUp[i]
-    // Use 'string'
+let favoritePie = PieType.Apple
+
+let name: String
+switch favoritePie {
+case .Apple:
+    name = "Apple"
+case .Cherry:
+    name = "Cherry"
+case .Pecan:
+    name = "Pecan"
 }
 
-for string in countingUp {
-    // Use 'string'
-}
-
-for (i, string) in countingUp.enumerate() {
-    // (0, "one"), (1, "two")
-}
-
-let nameByParkingSpace = [13: "Alice", 27: "Bob"]
-
-for (space, name) in nameByParkingSpace {
-    let permit = "Space \(space): \(name)"
+let osxVersion: Int = 12
+switch osxVersion {
+case 0...8:
+    print("A big cat")
+case 9:
+    print("Mavericks")
+case 10:
+    print("Yosemite")
+default:
+    print("Greetings, people of the future! What's new in 10.\(osxVersion)?")
 }
