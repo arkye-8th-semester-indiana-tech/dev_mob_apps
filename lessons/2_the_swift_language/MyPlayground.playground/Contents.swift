@@ -2,9 +2,8 @@
 
 import Cocoa
 
-let countingUp = ["one", "two"]
+var countingUp = ["one", "two"]
 let secondElement = countingUp[1]
 countingUp.count
 
-let emptyString = ""
-emptyString.isEmpty
+countingUp.append("three")
