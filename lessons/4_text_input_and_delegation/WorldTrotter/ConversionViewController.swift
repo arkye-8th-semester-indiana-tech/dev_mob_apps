@@ -50,15 +50,27 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         shouldChangeCharactersInRange range: NSRange,
         replacementString string: String) -> Bool {
             
+            var isTextFieldAccepted = false
+            
             let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
             let replacementTextHasDecimalSeparator = string.rangeOfString(".")
             
             if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
-                return false
+                isTextFieldAccepted = false
             }
             else {
-                return true
+                let replacementTextHasAlphabeticCharacter = string.rangeOfCharacterFromSet(NSCharacterSet.letterCharacterSet())
+                
+                
+                if replacementTextHasAlphabeticCharacter != nil {
+                    isTextFieldAccepted = false
+                }
+                else {
+                    isTextFieldAccepted = true
+                }
             }
+
+            return isTextFieldAccepted
     }
     
     @IBAction func fahrenheitFieldEditingChanged(textField: UITextField) {
