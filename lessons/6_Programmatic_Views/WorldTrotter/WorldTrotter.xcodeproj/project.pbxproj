@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A73B46341C6BB96800A45925 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B46331C6BB96800A45925 /* ConversionViewController.swift */; };
+		A74514211C74F96F00914AF3 /* BigRanchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74514201C74F96F00914AF3 /* BigRanchViewController.swift */; };
 		A770260C1C72501900D97955 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A770260B1C72501900D97955 /* MapKit.framework */; };
 		A77748591C69088800178D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77748581C69088800178D2B /* AppDelegate.swift */; };
 		A777485E1C69088800178D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A777485C1C69088800178D2B /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A73B46331C6BB96800A45925 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
+		A74514201C74F96F00914AF3 /* BigRanchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigRanchViewController.swift; sourceTree = "<group>"; };
 		A770260B1C72501900D97955 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A77748551C69088800178D2B /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77748581C69088800178D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				A777485F1C69088800178D2B /* Assets.xcassets */,
 				A77748611C69088800178D2B /* LaunchScreen.storyboard */,
 				A77748641C69088800178D2B /* Info.plist */,
+				A74514201C74F96F00914AF3 /* BigRanchViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74514211C74F96F00914AF3 /* BigRanchViewController.swift in Sources */,
 				A73B46341C6BB96800A45925 /* ConversionViewController.swift in Sources */,
 				A7A35B8A1C735DDC00BDA27F /* MapViewController.swift in Sources */,
 				A77748591C69088800178D2B /* AppDelegate.swift in Sources */,

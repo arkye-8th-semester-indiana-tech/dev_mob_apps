@@ -98,6 +98,21 @@
             </objects>
             <point key="canvasLocation" x="2432" y="336"/>
         </scene>
+        <!--BigRanchViewController-->
+        <scene sceneID="veF-Zd-VT5">
+            <objects>
+                <viewController id="gSX-c7-m9O" userLabel="BigRanchViewController" customClass="BigRanchViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="5WJ-VM-pfr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                    <tabBarItem key="tabBarItem" title="BigNerdRanch" id="Fdn-lN-hj6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUE-Ev-ueJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2450" y="1276"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8gd-nY-UuT">
             <objects>
@@ -110,6 +125,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="H8p-Sk-W0O"/>
                         <segue destination="kaj-0f-OUv" kind="relationship" relationship="viewControllers" id="rcN-8G-ux0"/>
+                        <segue destination="gSX-c7-m9O" kind="relationship" relationship="viewControllers" id="rhO-pz-eJK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gk2-VH-9Ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
