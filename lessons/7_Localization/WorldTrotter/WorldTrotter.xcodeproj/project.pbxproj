@@ -25,6 +25,8 @@
 		A777485F1C69088800178D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77748621C69088800178D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A77748641C69088800178D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78CCAF71C84B8D600C7A33F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		A78CCAF81C84B96300C7A33F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		A7A35B891C735DDC00BDA27F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A777485D1C69088800178D2B /* Base */,
+				A78CCAF71C84B8D600C7A33F /* en */,
+				A78CCAF81C84B96300C7A33F /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
