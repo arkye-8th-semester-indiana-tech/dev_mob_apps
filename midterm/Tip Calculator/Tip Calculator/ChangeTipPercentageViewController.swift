@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Tip Calculator
 //
 //  Created by Maia de Moraes, Jonathan H - 01 on 2/29/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ChangeTipPercentageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

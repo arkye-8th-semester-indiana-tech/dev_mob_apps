@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A7F2C1D01C84C50800DDCC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2C1CF1C84C50800DDCC5D /* AppDelegate.swift */; };
-		A7F2C1D21C84C50800DDCC5D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2C1D11C84C50800DDCC5D /* FirstViewController.swift */; };
-		A7F2C1D41C84C50800DDCC5D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2C1D31C84C50800DDCC5D /* SecondViewController.swift */; };
+		A7F2C1D21C84C50800DDCC5D /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2C1D11C84C50800DDCC5D /* TipCalculatorViewController.swift */; };
+		A7F2C1D41C84C50800DDCC5D /* ChangeTipPercentageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2C1D31C84C50800DDCC5D /* ChangeTipPercentageViewController.swift */; };
 		A7F2C1D71C84C50800DDCC5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F2C1D51C84C50800DDCC5D /* Main.storyboard */; };
 		A7F2C1D91C84C50800DDCC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F2C1D81C84C50800DDCC5D /* Assets.xcassets */; };
 		A7F2C1DC1C84C50800DDCC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F2C1DA1C84C50800DDCC5D /* LaunchScreen.storyboard */; };
@@ -18,8 +18,8 @@
 /* Begin PBXFileReference section */
 		A7F2C1CC1C84C50800DDCC5D /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F2C1CF1C84C50800DDCC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7F2C1D11C84C50800DDCC5D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A7F2C1D31C84C50800DDCC5D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A7F2C1D11C84C50800DDCC5D /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
+		A7F2C1D31C84C50800DDCC5D /* ChangeTipPercentageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTipPercentageViewController.swift; sourceTree = "<group>"; };
 		A7F2C1D61C84C50800DDCC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F2C1D81C84C50800DDCC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F2C1DB1C84C50800DDCC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				A7F2C1CF1C84C50800DDCC5D /* AppDelegate.swift */,
-				A7F2C1D11C84C50800DDCC5D /* FirstViewController.swift */,
-				A7F2C1D31C84C50800DDCC5D /* SecondViewController.swift */,
+				A7F2C1D11C84C50800DDCC5D /* TipCalculatorViewController.swift */,
+				A7F2C1D31C84C50800DDCC5D /* ChangeTipPercentageViewController.swift */,
 				A7F2C1D51C84C50800DDCC5D /* Main.storyboard */,
 				A7F2C1D81C84C50800DDCC5D /* Assets.xcassets */,
 				A7F2C1DA1C84C50800DDCC5D /* LaunchScreen.storyboard */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F2C1D41C84C50800DDCC5D /* SecondViewController.swift in Sources */,
+				A7F2C1D41C84C50800DDCC5D /* ChangeTipPercentageViewController.swift in Sources */,
 				A7F2C1D01C84C50800DDCC5D /* AppDelegate.swift in Sources */,
-				A7F2C1D21C84C50800DDCC5D /* FirstViewController.swift in Sources */,
+				A7F2C1D21C84C50800DDCC5D /* TipCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
