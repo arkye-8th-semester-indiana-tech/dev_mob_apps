@@ -18,6 +18,8 @@ class ChangeTipPercentageViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setKeyboard()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -42,7 +44,57 @@ class ChangeTipPercentageViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var doubleZeroButton: UIButton!
     @IBOutlet var xButton: UIButton!
     
-    
+    func setKeyboard() {
+        
+        doubleZeroButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        doubleZeroButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        doubleZeroButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        zeroButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        zeroButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        zeroButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        oneButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        oneButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        oneButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        twoButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        twoButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        twoButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        threeButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        threeButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        threeButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        fourButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        fourButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        fourButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        fiveButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        fiveButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        fiveButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        sixButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        sixButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        sixButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        sevenButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        sevenButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        sevenButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        eightButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        eightButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        eightButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        nineButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        nineButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        nineButton.titleLabel?.minimumScaleFactor = 0.1
+        
+        xButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        xButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        xButton.titleLabel?.minimumScaleFactor = 0.1
+    }
+
     var minimumNumberMagnitude: Int = -1;
     
     func buttonTapped(buttonID: Int) {
