@@ -43,6 +43,12 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CvZ-VB-5By"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ff-s4-3uH">
+                                <rect key="frame" x="279" y="20" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,6 +56,8 @@
                             <constraint firstItem="HQk-D5-sun" firstAttribute="centerX" secondItem="f3B-qs-dMM" secondAttribute="centerX" id="EN1-C7-Twk"/>
                             <constraint firstItem="f3B-qs-dMM" firstAttribute="top" secondItem="TGz-yg-vIA" secondAttribute="bottom" constant="8" id="GdO-sh-qwW"/>
                             <constraint firstItem="TGz-yg-vIA" firstAttribute="centerX" secondItem="f3B-qs-dMM" secondAttribute="centerX" id="HT8-B7-siX"/>
+                            <constraint firstItem="3ff-s4-3uH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IOX-a1-vGG"/>
+                            <constraint firstItem="3ff-s4-3uH" firstAttribute="top" secondItem="TGz-yg-vIA" secondAttribute="top" id="YQL-gq-BWu"/>
                             <constraint firstItem="TGz-yg-vIA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="ani-4e-olf"/>
                             <constraint firstItem="0oq-Z9-tWn" firstAttribute="top" secondItem="f3B-qs-dMM" secondAttribute="bottom" constant="210" id="c6J-AD-nPP"/>
                             <constraint firstItem="TGz-yg-vIA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cax-kE-mW9"/>
@@ -58,7 +66,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="0oq-Z9-tWn" id="L73-T0-dgB"/>
-                        <outlet property="questionLabel" destination="TGz-yg-vIA" id="v0t-hR-fze"/>
+                        <outlet property="currentQuestionLabel" destination="TGz-yg-vIA" id="cdM-FS-ysn"/>
+                        <outlet property="nextQuestionLabel" destination="3ff-s4-3uH" id="IWs-ef-MMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
