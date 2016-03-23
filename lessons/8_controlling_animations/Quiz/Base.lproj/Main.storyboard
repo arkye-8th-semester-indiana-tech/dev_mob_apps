@@ -55,10 +55,10 @@
                             <constraint firstItem="0oq-Z9-tWn" firstAttribute="centerX" secondItem="f3B-qs-dMM" secondAttribute="centerX" id="5OA-8m-WxH"/>
                             <constraint firstItem="HQk-D5-sun" firstAttribute="centerX" secondItem="f3B-qs-dMM" secondAttribute="centerX" id="EN1-C7-Twk"/>
                             <constraint firstItem="f3B-qs-dMM" firstAttribute="top" secondItem="TGz-yg-vIA" secondAttribute="bottom" constant="8" id="GdO-sh-qwW"/>
-                            <constraint firstItem="TGz-yg-vIA" firstAttribute="centerX" secondItem="f3B-qs-dMM" secondAttribute="centerX" id="HT8-B7-siX"/>
+                            <constraint firstItem="f3B-qs-dMM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HOT-Wg-E0X"/>
                             <constraint firstItem="3ff-s4-3uH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IOX-a1-vGG"/>
                             <constraint firstItem="3ff-s4-3uH" firstAttribute="top" secondItem="TGz-yg-vIA" secondAttribute="top" id="YQL-gq-BWu"/>
-                            <constraint firstItem="TGz-yg-vIA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="ani-4e-olf"/>
+                            <constraint firstItem="TGz-yg-vIA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ani-4e-olf"/>
                             <constraint firstItem="0oq-Z9-tWn" firstAttribute="top" secondItem="f3B-qs-dMM" secondAttribute="bottom" constant="210" id="c6J-AD-nPP"/>
                             <constraint firstItem="TGz-yg-vIA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cax-kE-mW9"/>
                             <constraint firstItem="HQk-D5-sun" firstAttribute="top" secondItem="0oq-Z9-tWn" secondAttribute="bottom" constant="8" id="g0y-94-TKo"/>
@@ -67,7 +67,9 @@
                     <connections>
                         <outlet property="answerLabel" destination="0oq-Z9-tWn" id="L73-T0-dgB"/>
                         <outlet property="currentQuestionLabel" destination="TGz-yg-vIA" id="cdM-FS-ysn"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="ani-4e-olf" id="6Jw-eo-hme"/>
                         <outlet property="nextQuestionLabel" destination="3ff-s4-3uH" id="IWs-ef-MMj"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="IOX-a1-vGG" id="tvT-pb-Uv2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
