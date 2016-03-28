@@ -17,8 +17,8 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Create an instance of UITableViewCell, with default appearance
-        let cell = UITableViewCell(style: .Value1, reuseIdentifier: "UITableViewCell")
+        // Get a new or recycled cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell", forIndexPath: indexPath)
         
         // Set the text on the cell with the dewscription of the item
         // that is at the nth index of items, where n = row this cell
