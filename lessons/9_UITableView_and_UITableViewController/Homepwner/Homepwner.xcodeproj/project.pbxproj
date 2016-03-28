@@ -13,6 +13,7 @@
 		A70B619C1CA3061100A96C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B619A1CA3061100A96C7E /* LaunchScreen.storyboard */; };
 		A7F71EBE1CA98FA2002245FC /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F71EBD1CA98FA2002245FC /* ItemsViewController.swift */; };
 		A7F71EC01CA9915D002245FC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F71EBF1CA9915D002245FC /* Item.swift */; };
+		A7F71EC21CA99CC4002245FC /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F71EC11CA99CC4002245FC /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A70B619D1CA3061100A96C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7F71EBD1CA98FA2002245FC /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		A7F71EBF1CA9915D002245FC /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A7F71EC11CA99CC4002245FC /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A70B619D1CA3061100A96C7E /* Info.plist */,
 				A7F71EBD1CA98FA2002245FC /* ItemsViewController.swift */,
 				A7F71EBF1CA9915D002245FC /* Item.swift */,
+				A7F71EC11CA99CC4002245FC /* ItemStore.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				A7F71EBE1CA98FA2002245FC /* ItemsViewController.swift in Sources */,
 				A7F71EC01CA9915D002245FC /* Item.swift in Sources */,
+				A7F71EC21CA99CC4002245FC /* ItemStore.swift in Sources */,
 				A70B61921CA3061100A96C7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
