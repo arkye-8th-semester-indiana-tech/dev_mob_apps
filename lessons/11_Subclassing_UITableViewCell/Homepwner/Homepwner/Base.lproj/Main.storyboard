@@ -52,20 +52,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-zg-GmP">
-                                            <rect key="frame" x="13" y="10" width="42" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="13" y="10" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJd-pX-q5X">
-                                            <rect key="frame" x="13" y="38.5" width="33" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <rect key="frame" x="13" y="41" width="28.5" height="13.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" red="0.48960306186868685" green="0.48960306186868685" blue="0.48960306186868685" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRW-pA-sKw">
-                                            <rect key="frame" x="545" y="22" width="42" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="547.5" y="22.5" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -73,6 +73,7 @@
                                     <constraints>
                                         <constraint firstItem="vsO-zg-GmP" firstAttribute="leading" secondItem="hw5-vd-kCc" secondAttribute="leadingMargin" constant="5" id="LkO-1E-VuO"/>
                                         <constraint firstItem="GRW-pA-sKw" firstAttribute="centerY" secondItem="hw5-vd-kCc" secondAttribute="centerY" id="ZEt-1Y-Kvz"/>
+                                        <constraint firstItem="CJd-pX-q5X" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vsO-zg-GmP" secondAttribute="bottom" id="iK1-RR-1tb"/>
                                         <constraint firstItem="CJd-pX-q5X" firstAttribute="leading" secondItem="vsO-zg-GmP" secondAttribute="leading" id="nIN-qf-qes"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="GRW-pA-sKw" secondAttribute="trailing" constant="5" id="oKt-7S-v6u"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="CJd-pX-q5X" secondAttribute="bottom" constant="2" id="u7L-A4-xeO"/>
