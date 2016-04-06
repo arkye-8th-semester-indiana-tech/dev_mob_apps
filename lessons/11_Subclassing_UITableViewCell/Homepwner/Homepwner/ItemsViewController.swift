@@ -52,6 +52,9 @@ class ItemsViewController: UITableViewController {
         // Get a new or recycled cell
         let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as! ItemCell
         
+        // Update the labels for the new preferred text size
+        cell.updateLabels()
+        
         // Set the text on the cell with the dewscription of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableview
