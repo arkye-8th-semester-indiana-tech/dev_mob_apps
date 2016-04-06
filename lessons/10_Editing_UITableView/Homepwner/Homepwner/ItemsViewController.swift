@@ -63,6 +63,10 @@ class ItemsViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+        return "Remove"
+    }
+    
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         // If the table view is asking to commit a delete command...
         if editingStyle == .Delete {
