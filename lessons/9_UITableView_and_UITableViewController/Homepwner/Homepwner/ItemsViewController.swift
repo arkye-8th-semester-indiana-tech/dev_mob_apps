@@ -12,21 +12,61 @@ class ItemsViewController: UITableViewController {
     
     var itemStore: ItemStore!
     
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemStore.allItems.count
+        
+        var itemsOver50 = 0
+        for i in itemStore.allItems {
+            if i.valueInDollars > 50 {
+                itemsOver50 += 1
+            }
+        }
+        
+        var itemsInSection = 0
+        if section == 0 {
+            itemsInSection = itemsOver50
+        } else if section == 1 {
+            itemsInSection = itemStore.allItems.count - itemsOver50
+        }
+        
+        
+        return itemsInSection
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return ">50"
+        } else {
+            return "< or = 50"
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // Get a new or recycled cell
         let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell", forIndexPath: indexPath)
+        let row = indexPath.row
         
-        // Set the text on the cell with the dewscription of the item
-        // that is at the nth index of items, where n = row this cell
-        // will appear in on the tableview
-        let item = itemStore.allItems[indexPath.row]
+        var item: Item?
+        var currentIndex = 0
+        let section = indexPath.section
         
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+        for i in itemStore.allItems {
+            if section == 0 && i.valueInDollars > 50 {
+                currentIndex++
+            } else if section == 1 && i.valueInDollars <= 50 {
+                currentIndex++
+            }
+            if currentIndex - 1 == row {
+                item = i
+                break;
+            }
+        }
+        
+        cell.textLabel?.text = item!.name
+        cell.detailTextLabel?.text = "$\(item!.valueInDollars)"
         
         return cell
     }
@@ -41,5 +81,4 @@ class ItemsViewController: UITableViewController {
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
     }
-    
 }
