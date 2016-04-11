@@ -14,38 +14,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="jat-Fn-eup">
-                            <rect key="frame" x="0.0" y="64" width="600" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CX6-P0-yDo">
-                                    <rect key="frame" x="8" y="15" width="288" height="30"/>
-                                    <state key="normal" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingMode:" destination="OUu-6M-fbR" eventType="touchUpInside" id="aAB-5v-1sv"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nc-xd-tF1">
-                                    <rect key="frame" x="304" y="15" width="288" height="30"/>
-                                    <state key="normal" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewItem:" destination="OUu-6M-fbR" eventType="touchUpInside" id="Q7s-4g-IE8"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="6Nc-xd-tF1" firstAttribute="centerY" secondItem="jat-Fn-eup" secondAttribute="centerY" id="Tau-Gg-FrE"/>
-                                <constraint firstItem="CX6-P0-yDo" firstAttribute="leading" secondItem="jat-Fn-eup" secondAttribute="leading" constant="8" id="Uan-Ky-bi4"/>
-                                <constraint firstItem="6Nc-xd-tF1" firstAttribute="leading" secondItem="CX6-P0-yDo" secondAttribute="trailing" constant="8" id="XDP-Ee-pZ9"/>
-                                <constraint firstAttribute="trailing" secondItem="6Nc-xd-tF1" secondAttribute="trailing" constant="8" id="YBx-NU-XRb"/>
-                                <constraint firstItem="6Nc-xd-tF1" firstAttribute="width" secondItem="CX6-P0-yDo" secondAttribute="width" id="ZUe-0c-TUx"/>
-                                <constraint firstItem="CX6-P0-yDo" firstAttribute="centerY" secondItem="jat-Fn-eup" secondAttribute="centerY" id="jk1-Kg-GVn"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="ecN-1b-7XQ" customClass="ItemCell" customModule="Homepwner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="152" width="600" height="65"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecN-1b-7XQ" id="hw5-vd-kCc">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="64.5"/>
@@ -93,7 +64,13 @@
                             <outlet property="delegate" destination="OUu-6M-fbR" id="sse-Bh-qbm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Homepwner" id="9mT-3Z-Eqc"/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="9mT-3Z-Eqc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nes-Vj-gfS">
+                            <connections>
+                                <action selector="addNewItem:" destination="OUu-6M-fbR" id="uhn-MU-5cz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4XY-2C-MXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
