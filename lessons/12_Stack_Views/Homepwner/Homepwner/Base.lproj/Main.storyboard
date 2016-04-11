@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="296" y="404"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="whc-fB-x5R">
             <objects>
-                <viewController id="8N0-Qj-dBc" sceneMemberID="viewController">
+                <viewController id="8N0-Qj-dBc" customClass="DetailViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bvU-wH-8eX"/>
                         <viewControllerLayoutGuide type="bottom" id="dF6-ar-7Oo"/>
@@ -133,13 +133,13 @@
                                         <rect key="frame" x="0.0" y="38" width="544" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97w-Gx-cxE">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6r-pU-Ca3">
-                                                <rect key="frame" x="51" y="0.0" width="493" height="30"/>
+                                                <rect key="frame" x="53" y="0.0" width="491" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -149,13 +149,13 @@
                                         <rect key="frame" x="0.0" y="76" width="544" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ6-Yx-gmK">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIU-0c-WCq">
-                                                <rect key="frame" x="50" y="0.0" width="494" height="30"/>
+                                                <rect key="frame" x="53" y="0.0" width="491" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -169,8 +169,8 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="97w-Gx-cxE" firstAttribute="leading" secondItem="fQ6-Yx-gmK" secondAttribute="leading" id="8lf-dR-zmO"/>
-                                    <constraint firstItem="FqG-Yb-fIo" firstAttribute="leading" secondItem="97w-Gx-cxE" secondAttribute="leading" id="Gw2-iE-3uc"/>
+                                    <constraint firstItem="Dhq-Mr-S6l" firstAttribute="leading" secondItem="Q6r-pU-Ca3" secondAttribute="leading" id="1FT-ZT-h66"/>
+                                    <constraint firstItem="Q6r-pU-Ca3" firstAttribute="leading" secondItem="NIU-0c-WCq" secondAttribute="leading" id="zU7-Xt-VmC"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -182,6 +182,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="d1Z-GQ-eHN" secondAttribute="trailing" constant="8" id="ztJ-ce-9Wv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="6hu-xC-Liu" id="cBO-zG-KKy"/>
+                        <outlet property="nameField" destination="Dhq-Mr-S6l" id="q2u-PZ-U8V"/>
+                        <outlet property="serialNumberField" destination="Q6r-pU-Ca3" id="8YU-BK-Hpa"/>
+                        <outlet property="valueField" destination="NIU-0c-WCq" id="ugM-rb-MrO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWq-9I-STy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

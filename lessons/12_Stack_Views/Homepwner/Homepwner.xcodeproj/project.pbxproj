@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70251F41CBC072C00ED6B0E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70251F31CBC072C00ED6B0E /* DetailViewController.swift */; };
 		A70B61921CA3061100A96C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B61911CA3061100A96C7E /* AppDelegate.swift */; };
 		A70B61971CA3061100A96C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B61951CA3061100A96C7E /* Main.storyboard */; };
 		A70B61991CA3061100A96C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B61981CA3061100A96C7E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A70251F31CBC072C00ED6B0E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		A70B618E1CA3061100A96C7E /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B61911CA3061100A96C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70B61961CA3061100A96C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				A70B61981CA3061100A96C7E /* Assets.xcassets */,
 				A70B619A1CA3061100A96C7E /* LaunchScreen.storyboard */,
 				A70B619D1CA3061100A96C7E /* Info.plist */,
+				A70251F31CBC072C00ED6B0E /* DetailViewController.swift */,
 				A7F71EBD1CA98FA2002245FC /* ItemsViewController.swift */,
 				A7F71EBF1CA9915D002245FC /* Item.swift */,
 				A7F71EC11CA99CC4002245FC /* ItemStore.swift */,
@@ -147,6 +150,7 @@
 				A7F71EBE1CA98FA2002245FC /* ItemsViewController.swift in Sources */,
 				A7F71EC01CA9915D002245FC /* Item.swift in Sources */,
 				A7F71EC21CA99CC4002245FC /* ItemStore.swift in Sources */,
+				A70251F41CBC072C00ED6B0E /* DetailViewController.swift in Sources */,
 				A70B61921CA3061100A96C7E /* AppDelegate.swift in Sources */,
 				A7F64F0B1CB57B3000A2C791 /* ItemCell.swift in Sources */,
 			);
