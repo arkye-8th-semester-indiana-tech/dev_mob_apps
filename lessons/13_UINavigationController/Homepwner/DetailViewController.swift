@@ -32,6 +32,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         return formatter
     }()
     
+    @IBAction func backgroundTapped(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -48,6 +52,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        // Clear first responder
+        view.endEditing(true)
         
         // "Save" changes to item
         item.name = nameField.text ?? ""
