@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialNumberField: UITextField!
@@ -31,6 +31,11 @@ class DetailViewController: UIViewController {
         formatter.timeStyle = .NoStyle
         return formatter
     }()
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
