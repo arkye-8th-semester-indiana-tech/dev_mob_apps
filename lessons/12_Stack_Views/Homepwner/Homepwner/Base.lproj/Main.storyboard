@@ -84,6 +84,7 @@
                                     <outlet property="nameLabel" destination="vsO-zg-GmP" id="i0y-Go-aSB"/>
                                     <outlet property="serialNumberLabel" destination="CJd-pX-q5X" id="MJB-3g-hV1"/>
                                     <outlet property="valueLabel" destination="GRW-pA-sKw" id="mmy-yx-LWC"/>
+                                    <segue destination="8N0-Qj-dBc" kind="show" id="1g8-qg-S6h"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -184,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWq-9I-STy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="1076"/>
+            <point key="canvasLocation" x="296" y="1142"/>
         </scene>
     </scenes>
 </document>
