@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="av2-2Y-3rf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--CourseTrack-->
+        <scene sceneID="MjF-Bv-f6S">
+            <objects>
+                <tableViewController id="83y-YD-Jhg" customClass="CourseTableViewController" customModule="CourseTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jiD-Pf-lTc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseCell" rowHeight="65" id="9Qe-yN-lfX" customClass="CourseCell" customModule="CourseTrack" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Qe-yN-lfX" id="8Zx-aL-sHb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsb-rf-arL">
+                                            <rect key="frame" x="8" y="42.5" width="28.5" height="13.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNn-Ns-gwT">
+                                            <rect key="frame" x="552.5" y="23" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-Pu-wTZ">
+                                            <rect key="frame" x="8" y="8" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="oNn-Ns-gwT" firstAttribute="centerY" secondItem="8Zx-aL-sHb" secondAttribute="centerY" id="0fz-nJ-fdX"/>
+                                        <constraint firstItem="KVe-Pu-wTZ" firstAttribute="leading" secondItem="8Zx-aL-sHb" secondAttribute="leadingMargin" id="Di4-oC-JR4"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="oNn-Ns-gwT" secondAttribute="trailing" id="JBY-R4-Ksv"/>
+                                        <constraint firstItem="Zsb-rf-arL" firstAttribute="top" secondItem="KVe-Pu-wTZ" secondAttribute="bottom" constant="15" id="JLq-wo-878"/>
+                                        <constraint firstItem="KVe-Pu-wTZ" firstAttribute="top" secondItem="8Zx-aL-sHb" secondAttribute="topMargin" id="cQz-lG-wzP"/>
+                                        <constraint firstItem="Zsb-rf-arL" firstAttribute="leading" secondItem="KVe-Pu-wTZ" secondAttribute="leading" id="fvf-2V-TrL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zsb-rf-arL" secondAttribute="bottom" id="txG-8w-guk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gradeLabel" destination="oNn-Ns-gwT" id="1hz-AR-rxI"/>
+                                    <outlet property="nameLabel" destination="KVe-Pu-wTZ" id="wT6-yW-dXk"/>
+                                    <outlet property="numberLabel" destination="Zsb-rf-arL" id="Kzt-WT-b55"/>
+                                    <segue destination="0He-zP-uEI" kind="show" identifier="ShowCourse" id="Lj0-Wp-Wkk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="83y-YD-Jhg" id="AXU-WE-GC1"/>
+                            <outlet property="delegate" destination="83y-YD-Jhg" id="O1b-E5-DKy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CourseTrack" id="RVG-qM-5gR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Cv-ef-snV">
+                            <connections>
+                                <action selector="addNewCourse:" destination="83y-YD-Jhg" id="218-Eh-9AI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1G-NL-zCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="500"/>
+        </scene>
+        <!--Course View Controller-->
+        <scene sceneID="dld-KO-Tvb">
+            <objects>
+                <viewController id="0He-zP-uEI" customClass="CourseViewController" customModule="CourseTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AnH-uc-bjX"/>
+                        <viewControllerLayoutGuide type="bottom" id="dKc-Dm-4O5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="673-8V-APG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-dK-HSB">
+                                <rect key="frame" x="28" y="72" width="544" height="520"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="R2M-WQ-OM8">
+                                        <rect key="frame" x="0.0" y="0.0" width="544" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7k-be-N4Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="30"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UqQ-bR-1Ye">
+                                                <rect key="frame" x="122.5" y="0.0" width="421.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="0He-zP-uEI" id="YYX-Wt-O8c"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="497-0T-ZrQ">
+                                        <rect key="frame" x="0.0" y="38" width="544" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-y1-zcl">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="30"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yj-21-Wwo">
+                                                <rect key="frame" x="122.5" y="0.0" width="421.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="0He-zP-uEI" id="MNh-Dt-vyg"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="245" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-2x-vyP">
+                                        <rect key="frame" x="0.0" y="76" width="544" height="444"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="246" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1d-yK-bra">
+                                                <rect key="frame" x="250" y="0.0" width="44.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTQ-xp-Jb4">
+                                                <rect key="frame" x="112" y="19.5" width="320" height="216"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="0He-zP-uEI" id="mSa-Pj-qJq"/>
+                                                    <outlet property="delegate" destination="0He-zP-uEI" id="vWh-Wt-Z8J"/>
+                                                </connections>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="245" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-hS-w4R">
+                                                <rect key="frame" x="272" y="235.5" width="0.0" height="208.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UqQ-bR-1Ye" firstAttribute="leading" secondItem="1yj-21-Wwo" secondAttribute="leading" id="Ggb-d5-3TM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="YHw-dK-HSB" firstAttribute="top" secondItem="AnH-uc-bjX" secondAttribute="bottom" constant="8" id="2MM-eO-Xgy"/>
+                            <constraint firstItem="YHw-dK-HSB" firstAttribute="leading" secondItem="673-8V-APG" secondAttribute="leadingMargin" constant="8" id="XxY-3g-Jb4"/>
+                            <constraint firstItem="dKc-Dm-4O5" firstAttribute="top" secondItem="YHw-dK-HSB" secondAttribute="bottom" constant="8" id="dwv-zK-BuK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YHw-dK-HSB" secondAttribute="trailing" constant="8" id="sv0-Xy-LRc"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ViM-He-0jG" appends="YES" id="xhO-eF-AsF"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="gradePicker" destination="cTQ-xp-Jb4" id="7Lu-Oj-p2B"/>
+                        <outlet property="nameField" destination="UqQ-bR-1Ye" id="fHv-R8-0Gg"/>
+                        <outlet property="numberField" destination="1yj-21-Wwo" id="UzR-ur-Qtm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qee-hY-BT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ViM-He-0jG">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="0He-zP-uEI" id="hS8-3b-fBk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="25" y="1367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IF4-15-oBa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="av2-2Y-3rf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hgj-90-byD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="83y-YD-Jhg" kind="relationship" relationship="rootViewController" id="YCJ-i3-R79"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJx-pj-rcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="500"/>
+        </scene>
+    </scenes>
+</document>
